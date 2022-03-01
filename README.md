@@ -4,3 +4,4 @@ The cold tongue index (CTI) is defined to be average sea surface temperature (SS
 
 The CTI captures a lower-frequency signal of the El Niño / Southern Oscillation phenomenon than the Nino3.4 index, which is decribed at https://github.com/ToddMitchellGH/ENSO-nino3.4-timeseries/blob/master/README.md.  That README.md also documents the temperature and precipitation anomalies associated with fluctuations in the CTI/Nino3.4.
 
+Plots of the CTI and global-mean SST are presented at https://sites.google.com/site/toddmitchellgeophysics
