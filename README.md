@@ -7,7 +7,7 @@ The CTI captures a lower-frequency signal of the El Niño / Southern Oscillation
 I am calculating the CTI from the Extended Reconstructed Sea Surface Temperature (ERSST; Huang et al., 2017, J. Climate) dataset, which is served by NOAA ESRL<br>
 wget https://downloads.psl.noaa.gov/Datasets/noaa.ersst.v5/sst.mnmean.nc .
 
-NetCDF commands are used to calculate the global-mean SST and CTI: 
+NetCDF commands are used to calculate the global-mean SST and CTI:<br>
 ncwa -O -h -a lat,lon -d lat,-6.0,6.0 -d lon,180.0,270.0 sst.mnmean.nc a.nc
 
 ncap2 -h -O -s "weights=cos(lat*3.1415/180)" sst.mnmean.nc sst.mnmean.nc
