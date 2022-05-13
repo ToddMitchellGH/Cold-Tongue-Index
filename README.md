@@ -10,7 +10,7 @@ wget https://downloads.psl.noaa.gov/Datasets/noaa.ersst.v5/sst.mnmean.nc .
 NetCDF commands are used to calculate the global-mean SST and CTI:<br>
 ncwa -O -h -a lat,lon -d lat,-6.0,6.0 -d lon,180.0,270.0 sst.mnmean.nc a.nc
 
-ncap2 -h -O -s "weights=cos(lat*3.1415/180)" sst.mnmean.nc sst.mnmean.nc
+ncap2 -h -O -s "weights=cos(lat*3.1415/180)" sst.mnmean.nc sst.mnmean.nc<br>
 ncwa -h -O -w weights -a lat,lon sst.mnmean.nc sstglobalmean1854jan2022.nc
 
 ncdiff a.nc sstglobalmean1854jan2022.nc cti1854jan2022.nc
